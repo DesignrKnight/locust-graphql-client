@@ -31,7 +31,7 @@ class MeasuredGraphQLClient(GraphQLClient):
         return result
 
 
-class GraphQLLocust(Locust):
+class GraphQLLocust(User):
     def __init__(self, *args, **kwargs):
         super(GraphQLLocust, self).__init__(*args, **kwargs)
         self.client = MeasuredGraphQLClient(endpoint=self.host)
