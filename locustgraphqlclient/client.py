@@ -1,7 +1,7 @@
 import time
 import json
 import urllib
-from locust import Locust, events
+from locust import User, events
 from graphqlclient import GraphQLClient
 
 
